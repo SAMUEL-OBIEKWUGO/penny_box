@@ -1,0 +1,89 @@
+/* Background and text color classes */
+.bg-purple {
+  background-color: #3b0046; /* Dark purple */
+  height: 90vh; /* Full viewport height */
+}
+
+.text-yellow {
+  color: #fbbf00; /* Yellow text */
+}
+
+/* Button colors */
+.btn-yellow {
+  background-color: #fbbf00; /* Yellow button */
+  color: #3b0046;
+  border: none; /* Removes border around button */
+}
+
+.btn-light-purple {
+  background-color: #e0b3ff; /* Light purple button */
+  color: #3b0046;
+  border: none; /* Removes border around button */
+}
+
+/* Button hover effect */
+.btn-yellow:hover, .btn-light-purple:hover {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+/* Margin for hero heading */
+#hero-heading {
+  margin-top: 1rem;
+}
+
+/* Hero content text styling */
+.hero-content h1 {
+  color: #fbbf00; /* Yellow text for title */
+}
+
+.hero-content p {
+  color: #fbbf00;
+}
+
+.hero-image {
+  max-width: 500px; /* Restrict image size */
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image fits within its container */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 2rem 1rem;
+    height: 120vh; /* Increase height for smaller screens */
+  }
+
+  #hero-heading {
+    margin-top: 5rem; /* More space at top for mobile */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem; /* Smaller font size on mobile */
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    margin-top: 2rem; /* Adjust margin for better spacing */
+  }
+
+  .d-flex {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+  }
+}
+
+/* Optional: Larger screen tweaks */
+@media (min-width: 1200px) {
+  .hero-section {
+    height: 100vh; /* Full viewport height on larger screens */
+  }
+
+  .hero-content h1 {
+    font-size: 3rem; /* Larger font size for big screens */
+  }
+}

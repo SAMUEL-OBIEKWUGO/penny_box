@@ -1,0 +1,76 @@
+/* Custom Navbar styling */
+.custom-navbar {
+    background-color: #3b0046; /* Dark purple background */
+    transition: background-color 0.3s ease, padding 0.3s ease;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.custom-navbar.scrolled {
+    background-color: #290032; /* Darker purple when scrolled */
+    padding: 0.5rem 0; /* Reduce padding when scrolled */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds shadow effect when scrolled */
+}
+
+/* Brand styles */
+.custom-navbar .navbar-brand {
+    color: #fbbf00; /* Yellow color for the brand */
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.custom-navbar .navbar-brand img {
+    margin-right: 0.5rem;
+    max-height: 30px; /* Adjust logo size */
+}
+
+/* Navbar links */
+.nav-link-custom {
+    color: #fbbf00 !important; /* Yellow color for nav links */
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect on links */
+.nav-link-custom:hover {
+    color: #e0b3ff !important; /* Light purple on hover */
+}
+
+/* Navbar toggler button */
+.navbar-toggler {
+    border-color: #fbbf00; /* Yellow color for toggler */
+}
+
+/* Custom yellow icon for toggler */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(251, 191, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        flex-grow: 1; /* Allow collapse to take up available space */
+    }
+
+    .nav-link-custom {
+        margin: 0 0.5rem; /* Reduce margin between nav links on mobile */
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem; /* Adjust brand size on mobile */
+    }
+
+    .navbar-toggler {
+        background-color: #3b0046; /* Toggler background color on mobile */
+    }
+}
+
+/* Larger screens adjustments */
+@media (min-width: 768px) {
+    .navbar-expand-lg .navbar-nav {
+        align-items: center; /* Center items on larger screens */
+    }
+}

@@ -1,0 +1,36 @@
+/* Background and text colors */
+.about-us-section {
+    background-color: #3b0046; /* Dark purple background */
+    color: #fbbf00; /* Yellow text */
+  }
+  
+  .text-yellow {
+    color: #fbbf00; /* Yellow text for headings */
+  }
+  
+  /* Image styling */
+  .about-image {
+    border-radius: 8px;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Divider styling */
+  .about-content h2,
+  .about-content h3 {
+    color: #fbbf00;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fbbf00;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .about-image {
+      margin-bottom: 2rem;
+    }
+  }
+  
